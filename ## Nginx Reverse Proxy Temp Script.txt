@@ -1,0 +1,11 @@
+## Nginx Reverse Proxy
+
+#!/bin/bash
+sudo -i
+systemctl stop nginx
+systemctl start nginx
+systemctl stop mariadb
+systemctl start mariadb
+cd /root/apache-tomcat-8.5.97/bin/
+sh catalina.sh stop
+sh catalina.sh start
